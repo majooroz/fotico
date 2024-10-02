@@ -10,6 +10,8 @@ from PIL import Image
 from gtts import gTTS
 from googletrans import Translator
 
+image = Image.open("robot.jpeg")
+st.image(image,caption = "robot")
 
 text=" "
 
