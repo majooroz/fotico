@@ -10,9 +10,6 @@ from PIL import Image
 from gtts import gTTS
 from googletrans import Translator
 
-image = Image.open("robot.jpeg")
-st.image(image,caption = "robot")
-
 text=" "
 
 def text_to_speech(input_language, output_language, text, tld):
@@ -46,6 +43,8 @@ remove_files(7)
 
 
 st.title("Reconocimiento Óptico de Caracteres")
+image = Image.open("robot.jpeg")
+st.image(image,caption = "robot")
 st.subheader("Elige la fuente de la imágen, esta puede venir de la cámara o cargando un archivo")
 
 cam_ = st.checkbox("Usar Cámara")
