@@ -43,8 +43,8 @@ st.title("Reconocimiento Óptico de Caracteres")
 st.markdown("""
     <style>
     .robot-image {
-        width: 300px;
-        height: 200px;
+        width: 150px;
+        height: 100px;
     }
     </style>
     """, unsafe_allow_html=True)
