@@ -43,15 +43,15 @@ st.title("Reconocimiento Óptico de Caracteres")
 
 st.markdown("""
     <style>
-    .img-container img {
-        width: 150px;
-        height: 100px;
+    .robot-image {
+        width: 300px;
+        height: 200px;
     }
     </style>
-    <div class="img-container">
-        <img src="robot.jpeg" alt="robot">
-    </div>
     """, unsafe_allow_html=True)
+
+image = Image.open("robot.jpeg")
+st.markdown('<img src="data:image/jpeg;base64,{}" class="robot-image" alt="robot">'.format(st.image(image, use_column_width=False).image_to_data_uri()), unsafe_allow_html=True)
 
 st.subheader("Elige la fuente de la imagen, esta puede venir de la cámara o cargando un archivo")
 
