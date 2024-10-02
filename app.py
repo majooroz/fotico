@@ -40,20 +40,9 @@ def remove_files(n):
 remove_files(7)
   
 st.title("Reconocimiento Óptico de Caracteres")
-
-st.markdown("""
-    <style>
-    .robot-image {
-        width: 300px;
-        height: 200px;
-    }
-    </style>
-    """, unsafe_allow_html=True)
-
-image = Image.open("robot.jpeg")
-st.markdown('<img src="data:image/jpeg;base64,{}" class="robot-image" alt="robot">'.format(st.image(image, use_column_width=False).image_to_data_uri()), unsafe_allow_html=True)
-
-st.subheader("Elige la fuente de la imagen, esta puede venir de la cámara o cargando un archivo")
+image = Image.open("afterlifes.jpeg")
+st.image(image,caption = "afterlifes")
+st.subheader("Elige la fuente de la imágen, esta puede venir de la cámara o cargando un archivo")
 
 cam_ = st.checkbox("Usar Cámara")
 
